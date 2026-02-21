@@ -7,6 +7,11 @@ on:
       - 'docs/**'
       - '.gitignore'
       - '.env.example'
+  
+  workflow_dispatch:
+
+  schedule:
+    - cron: '0 2 * * 6'
   pull_request:
     branches: [ main, master ]
 

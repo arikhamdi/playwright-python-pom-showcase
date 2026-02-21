@@ -17,8 +17,10 @@ It follows the **Page Object Model (POM)** design pattern to ensure maintainabil
 - **Fail-Fast Principle**: Environment variables are validated before test execution.
 - **CI/CD**: Integrated with GitHub Actions for automated regression testing.
 
-## 🛠️ Setup Instructions
-1. **Clone the repository**:
-   ```bash
-   git clone [https://github.com/arikhamdi/playwright-python-pom-showcase.git](https://github.com/arikhamdi/playwright-python-pom-showcase.git)
-   cd playwright-python-pom-showcase
+## 🛠️ Tech Stack & Features
+- **Language**: Python 3.12+
+- **Framework**: Pytest
+- **Tool**: Playwright
+- **Reporting**: Pytest-HTML with automated GitHub Pages deployment
+- **Security**: Environment variables validation (Fail-Fast)
+- **Pattern**: Page Object Model (POM)
