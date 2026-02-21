@@ -30,11 +30,21 @@ jobs:
         BASE_URL: ${{ secrets.BASE_URL }}
         STANDARD_USER: ${{ secrets.STANDARD_USER }}
         PASSWORD: ${{ secrets.PASSWORD }}
-      run: python -m pytest --html=report.html --self-contained-html tests/
+      run: python -m pytest --html=index.html --self-contained-html tests/
 
     - name: Upload Test Report
       if: always()
       uses: actions/upload-artifact@v4
       with:
         name: test-report
-        path: report.html
+        path: index.html
+    
+    - name: Deploy to GitHub Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./         
+        keep_files: false       
+        publish_branch: gh-pages
+        destination_dir: .      
