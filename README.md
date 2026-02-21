@@ -2,6 +2,12 @@
 
 [![Playwright Tests](https://github.com/arikhamdi/playwright-python-pom-showcase/actions/workflows/main.yml/badge.svg)](https://github.com/arikhamdi/playwright-python-pom-showcase/actions)
 
+
+## 📊 Test Execution Report
+The latest test results are automatically deployed and available here: 
+👉 **[Live QA Report](https://arikhamdi.github.io/playwright-python-pom-showcase/)**
+
+
 ## 📋 Project Overview
 This is a E2E (End-to-End) testing framework built with **Python**, **Playwright**, and **Pytest**. 
 It follows the **Page Object Model (POM)** design pattern to ensure maintainability and scalability.
